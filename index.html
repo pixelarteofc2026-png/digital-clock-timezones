@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕐 Digital Clock - Multiple Time Zones</h1>
+            <p>Real-time clock display for different time zones around the world</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search timezone (e.g., 'New York', 'Tokyo')" class="search-box">
+            <button id="addTimezoneBtn" class="btn btn-primary">+ Add Timezone</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset to Default</button>
+        </div>
+
+        <div class="timezone-selector">
+            <select id="timezoneSelect" class="timezone-dropdown">
+                <option value="">Select a timezone...</option>
+            </select>
+        </div>
+
+        <div class="clocks-container" id="clocksContainer">
+            <!-- Clocks will be added here dynamically -->
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Digital Clock | Timezone Support | Built with JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
